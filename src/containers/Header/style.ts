@@ -80,7 +80,7 @@ justify-content:center;
 align-items: center !important;
 position: relative;
 top:-25px;
-left:50%;
+margin: 0 auto;
 box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
 border: none;
 `
