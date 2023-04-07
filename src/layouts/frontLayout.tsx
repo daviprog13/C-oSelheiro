@@ -3,6 +3,7 @@ import Header from '@/containers/Header/Header'
 import { LayoutFront, MainContent } from './styles'
 import CategoryContentItems from '@/containers/MainContentCategory'
 import TopBrands from '@/containers/TopBrands'
+import ProductSale from '@/containers/ProductsSale'
 const FrontLayout = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const FrontLayout = () => {
         <Header />
         <MainContent>
           <CategoryContentItems />
+          <ProductSale />
           <TopBrands />
         </MainContent>
       </LayoutFront>
