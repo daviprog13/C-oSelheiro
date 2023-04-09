@@ -4,6 +4,7 @@ import { LayoutFront, MainContent } from './styles'
 import CategoryContentItems from '@/containers/MainContentCategory'
 import TopBrands from '@/containers/TopBrands'
 import ProductSale from '@/containers/ProductsSale'
+import Partners from '@/containers/Partners'
 const FrontLayout = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const FrontLayout = () => {
           <CategoryContentItems />
           <ProductSale />
           <TopBrands />
+          <Partners />
         </MainContent>
       </LayoutFront>
     </>
