@@ -5,6 +5,8 @@ import CategoryContentItems from '@/containers/MainContentCategory'
 import TopBrands from '@/containers/TopBrands'
 import ProductSale from '@/containers/ProductsSale'
 import Partners from '@/containers/Partners'
+import Blog from '@/containers/Blog'
+import Instagram from '@/containers/Instagram'
 const FrontLayout = () => {
   return (
     <>
@@ -14,7 +16,9 @@ const FrontLayout = () => {
           <CategoryContentItems />
           <ProductSale />
           <TopBrands />
-          <Partners />
+          {/* <Partners /> */}
+          <Blog />
+          <Instagram />
         </MainContent>
       </LayoutFront>
     </>
