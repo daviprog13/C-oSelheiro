@@ -7,6 +7,7 @@ import ProductSale from '@/containers/ProductsSale'
 import Partners from '@/containers/Partners'
 import Blog from '@/containers/Blog'
 import Instagram from '@/containers/Instagram'
+import Form from '@/containers/Form'
 const FrontLayout = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const FrontLayout = () => {
           {/* <Partners /> */}
           <Blog />
           <Instagram />
+          <Form />
         </MainContent>
       </LayoutFront>
     </>
