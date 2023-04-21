@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Carousel, Card, Col, Button} from 'antd'
+import { Card, Col, Button} from 'antd'
 
 
 const { Meta } = Card;
@@ -7,9 +7,6 @@ export const ContainerMain = styled.section`
  max-width:90% !important;
  margin:0 auto;
  margin-top:80px;
-`
-
-export const StyledCarousel = styled(Carousel)`
 `
 export const ContainerImgs = styled.section`
 display:flex !important;
@@ -57,3 +54,4 @@ display:flex !important;
 justify-content: center !important;
 align-items:center;
 `
+
