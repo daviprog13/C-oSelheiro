@@ -3,7 +3,7 @@ import React from 'react'
 import { Row } from 'antd'
 import { ContainerProductSale, TabProductSale, SeeAll } from './styles'
 import type { TabsProps } from 'antd'
-import CarouselProductSale from './CarouselProductSale'
+import CarouselProductSale from '../CarouselProductSale'
 const TemplateProductSale = () => {
   const onChange = (key: string) => {
     console.log(key)
@@ -39,7 +39,7 @@ const TemplateProductSale = () => {
     <ContainerProductSale>
       <div>
         <Row justify={'end'}>
-          <div className="title">
+          <div className="title" id="1">
             <AllTitles text="Meu cachorro..." />
           </div>
           <TabProductSale

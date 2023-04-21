@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Card, Typography, Rate, Button, Carousel } from "antd";
+import { Card, Typography, Rate, Button, Carousel, Space } from "antd";
 
-export const ContainerAllProducts = styled.div`
+export const ContainerAllProducts = styled.section`
 
 `
 
@@ -159,18 +159,3 @@ export const StyledCarousel = styled(Carousel)`
 `
 
 
-/* .slick-dots {
-  bottom:50px !important;
-}
-  .slick-dots li button {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    border: 4px solid #fff;
-    background: transparent;
-  }
-   .slick-dots li.slick-active button {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-  } */

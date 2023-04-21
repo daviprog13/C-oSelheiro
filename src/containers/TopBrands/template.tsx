@@ -2,7 +2,6 @@ import React, { MutableRefObject, useRef } from 'react'
 import {
   ContainerTopBrands,
   SeeAll,
-  ImageStyledRow,
   CardBrands,
   StyledCol,
   BTNLeft,
@@ -58,7 +57,7 @@ const TemplateTopBrands = () => {
         <AllTitles text="Principais marcas" />
         <SeeAll href="#">Ver todos</SeeAll>
       </Row>
-      <ImageStyledRow>
+      <Row>
         <StyledCol span={24}>
           <BTNLeft
             onClick={() => {
@@ -87,7 +86,7 @@ const TemplateTopBrands = () => {
             <RightOutlined />
           </BTNRight>
         </StyledCol>
-      </ImageStyledRow>
+      </Row>
     </ContainerTopBrands>
   )
 }

@@ -22,10 +22,6 @@ text-decoration-line: underline;
 }
 `
 
-export const ImageStyledRow = styled(Row)`
-
-`
-
 export const CardBrands = styled(Card)`
 width: 178px;
 height: 178px;
