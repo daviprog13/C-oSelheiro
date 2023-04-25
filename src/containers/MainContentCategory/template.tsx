@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import {
   ContainerMain,
-  StyledCarousel,
   CardAntd,
   MetaAntd,
   ContainerImgs,
@@ -53,7 +52,7 @@ const CategoryTemplate = () => {
           >
             <LeftOutlined />
           </BTNLeftRight>
-          <StyledCarousel ref={playSlider}>
+          <Carousel ref={playSlider}>
             <ContainerImgs>
               {cardObject.map(({ img, title }) => (
                 <CardAntd hoverable cover={img}>
@@ -68,7 +67,7 @@ const CategoryTemplate = () => {
                 </CardAntd>
               ))}
             </ContainerImgs>
-          </StyledCarousel>
+          </Carousel>
           <BTNLeftRight
             onClick={() => {
               playSlider.current.next()

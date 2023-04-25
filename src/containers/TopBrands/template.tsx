@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { MutableRefObject, useRef } from 'react'
 import {
   ContainerTopBrands,
   SeeAll,
-  ImageStyledRow,
   CardBrands,
   StyledCol,
   BTNLeft,
@@ -13,6 +12,7 @@ import { Row, Col, Carousel } from 'antd'
 import Image from 'next/image'
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 const TemplateTopBrands = () => {
+  const clickTopBrands: any = useRef(null)
   const topBrands = [
     {
       img: <Image src="/blory.svg" width={81} height={84} alt="blory-icon" />
@@ -57,23 +57,36 @@ const TemplateTopBrands = () => {
         <AllTitles text="Principais marcas" />
         <SeeAll href="#">Ver todos</SeeAll>
       </Row>
-      <ImageStyledRow>
+      <Row>
         <StyledCol span={24}>
-          <BTNLeft>
+          <BTNLeft
+            onClick={() => {
+              clickTopBrands.current.prev()
+            }}
+          >
             <LeftOutlined />
           </BTNLeft>
-          <Carousel>
+          <Carousel ref={clickTopBrands}>
+            <div className="positionFlex">
+              {topBrands.map(({ img }) => (
+                <CardBrands>{img}</CardBrands>
+              ))}
+            </div>
             <div className="positionFlex">
               {topBrands.map(({ img }) => (
                 <CardBrands>{img}</CardBrands>
               ))}
             </div>
           </Carousel>
-          <BTNRight>
+          <BTNRight
+            onClick={() => {
+              clickTopBrands.current.next()
+            }}
+          >
             <RightOutlined />
           </BTNRight>
         </StyledCol>
-      </ImageStyledRow>
+      </Row>
     </ContainerTopBrands>
   )
 }

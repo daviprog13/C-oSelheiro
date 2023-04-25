@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import {Layout, Row, Col, Typography, Input, Button} from 'antd'
+import {Layout, Row, Col, Typography, Input, Button, Anchor} from 'antd'
 
 const {Header} = Layout
+const { Link } = Anchor
 
 export const StyleHeader = styled(Header)`
 background-color: #ffffff; 
@@ -69,6 +70,30 @@ export const InputSearch = styled(Input)`
   width: 657px !important;
  } 
 `
+
+export const AnchorButton = styled(Anchor)`
+
+  .ant-anchor-link-title{
+width: 32px;
+height: 32px;
+border-radius:50%;
+text-align:center;
+display: flex;
+justify-content:center;
+align-items: center !important;
+position: relative;
+top:-25px;
+margin: 0 auto;
+box-shadow: 0px 6px 16px rgba(179, 134, 0, 0.24);
+border: none;
+z-index: 999;
+background-color: #fff;
+span{
+  margin-top: 10px;
+}
+}
+`
+
 
 export const ButtonAnchor = styled(Button)`
 width: 32px;

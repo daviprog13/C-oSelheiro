@@ -8,12 +8,13 @@ import {
   StyledMidlleHeader,
   InputSearch,
   StyledMidlleColInput,
-  ButtonAnchor
+  AnchorButton
 } from './style'
 import Image from 'next/image'
-import { Typography, Col } from 'antd'
+import { Typography, Col, Anchor } from 'antd'
+const { Link } = Anchor
 import { DownOutlined } from '@ant-design/icons'
-import HeaderCarousel from './HeaderCarrousel/HeaderCarousel'
+import HeaderCarousel from '../HeaderCarrousel/HeaderCarousel'
 
 const Header = () => {
   return (
@@ -71,9 +72,9 @@ const Header = () => {
         </Col>
       </StyledMidlleHeader>
       <HeaderCarousel />
-      <ButtonAnchor>
-        <DownOutlined />
-      </ButtonAnchor>
+      <AnchorButton affix={true}>
+        <Anchor.Link href="#1" title={<DownOutlined />} key="1" />
+      </AnchorButton>
     </StyleHeader>
   )
 }

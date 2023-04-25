@@ -5,6 +5,7 @@ export const ContainerTopBrands = styled.section`
  max-width:90% !important;
  margin:0 auto;
  margin-top:80px;
+
 `
 
 export const SeeAll = styled(Link)`
@@ -19,10 +20,6 @@ color: #FBB900;
   color: #FBB900;
 text-decoration-line: underline;
 }
-`
-
-export const ImageStyledRow = styled(Row)`
-
 `
 
 export const CardBrands = styled(Card)`
