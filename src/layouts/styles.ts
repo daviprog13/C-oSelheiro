@@ -4,6 +4,7 @@ const {Content} = Layout
 export const LayoutFront = styled(Layout)`
  width: 100%;
  height: 100%;
+ overflow:hidden;
 `
 
 export const MainContent = styled(Content)`

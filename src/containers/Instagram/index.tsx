@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContainerInstagram, Follow } from './styles'
-import { Row } from 'antd'
+import { Col, Row } from 'antd'
 import AllTitles from '@/components/Titles/AllTitles'
 import Image from 'next/image'
 const Instagram = () => {
@@ -35,9 +35,9 @@ const Instagram = () => {
           <Follow href="#">+Seguir</Follow>
         </Row>
       </ContainerInstagram>
-      <Row>
+      <Row justify={'center'}>
         {objectImage.map(({ img }) => (
-          <span>{img}</span>
+          <span key={undefined}>{img}</span>
         ))}
       </Row>
     </>
