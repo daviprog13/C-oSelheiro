@@ -69,12 +69,12 @@ const TemplateTopBrands = () => {
           <Carousel ref={clickTopBrands}>
             <div className="positionFlex">
               {topBrands.map(({ img }) => (
-                <CardBrands>{img}</CardBrands>
+                <CardBrands key={undefined}>{img}</CardBrands>
               ))}
             </div>
             <div className="positionFlex">
               {topBrands.map(({ img }) => (
-                <CardBrands>{img}</CardBrands>
+                <CardBrands key={undefined}>{img}</CardBrands>
               ))}
             </div>
           </Carousel>

@@ -55,14 +55,14 @@ const CategoryTemplate = () => {
           <Carousel ref={playSlider}>
             <ContainerImgs>
               {cardObject.map(({ img, title }) => (
-                <CardAntd hoverable cover={img}>
+                <CardAntd hoverable cover={img} key={title}>
                   <MetaAntd description={title} />
                 </CardAntd>
               ))}
             </ContainerImgs>
             <ContainerImgs>
               {cardObject.map(({ img, title }) => (
-                <CardAntd hoverable cover={img}>
+                <CardAntd hoverable cover={img} key={title}>
                   <MetaAntd description={title} />
                 </CardAntd>
               ))}
