@@ -79,7 +79,7 @@ const TemplateBlog = () => {
           <StyledCarousel ref={refCarousel}>
             <ContainerImgs>
               {blogInfo.map(({ text, img, title, btn }) => (
-                <StyledCard cover={img} hoverable>
+                <StyledCard cover={img} hoverable key={text}>
                   <Meta
                     title={<TitleCard>{title}</TitleCard>}
                     description={text}
@@ -90,7 +90,7 @@ const TemplateBlog = () => {
             </ContainerImgs>
             <ContainerImgs>
               {blogInfo.map(({ text, img, title, btn }) => (
-                <StyledCard cover={img} hoverable>
+                <StyledCard cover={img} hoverable key={text}>
                   <Meta
                     title={<TitleCard>{title}</TitleCard>}
                     description={text}

@@ -98,7 +98,7 @@ const TemplateCarouselProductSale = () => {
               priceSubscription,
               BTNAdd
             }) => (
-              <div>
+              <div key={pricePerncentage}>
                 <ContainerProduct>
                   <Row justify={'space-between'} align={'middle'}>
                     <PercentagePrice>{pricePerncentage}</PercentagePrice>
@@ -155,7 +155,7 @@ const TemplateCarouselProductSale = () => {
               priceSubscription,
               BTNAdd
             }) => (
-              <div>
+              <div key={pricePerncentage}>
                 <ContainerProduct>
                   <Row justify={'space-between'} align={'middle'}>
                     <PercentagePrice>{pricePerncentage}</PercentagePrice>
@@ -212,7 +212,7 @@ const TemplateCarouselProductSale = () => {
               priceSubscription,
               BTNAdd
             }) => (
-              <div>
+              <div key={pricePerncentage}>
                 <ContainerProduct>
                   <Row justify={'space-between'} align={'middle'}>
                     <PercentagePrice>{pricePerncentage}</PercentagePrice>
@@ -269,7 +269,7 @@ const TemplateCarouselProductSale = () => {
               priceSubscription,
               BTNAdd
             }) => (
-              <div>
+              <div key={pricePerncentage}>
                 <ContainerProduct>
                   <Row justify={'space-between'} align={'middle'}>
                     <PercentagePrice>{pricePerncentage}</PercentagePrice>
