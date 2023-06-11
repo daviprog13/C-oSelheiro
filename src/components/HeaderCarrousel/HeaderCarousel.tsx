@@ -37,7 +37,7 @@ const HeaderCarousel = () => {
             playSlider?.current.prev()
           }}
         >
-          <LeftOutlined />
+          <Image src="/leftOutlined.svg" width={40} height={40} alt="" />
         </ButtonPref>
         <StyledCarousel arrows={true} ref={playSlider}>
           <StyledOfferImg3>
