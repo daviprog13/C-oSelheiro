@@ -88,7 +88,7 @@ const HeaderCarousel = () => {
 
           <StyledOfferImg3>
             <TitleCarousel>
-              As melhores guias para os melhores passeios.
+              As melhores guias para os melhores passeios
             </TitleCarousel>
             <ButtonPage1>Confira</ButtonPage1>
           </StyledOfferImg3>
