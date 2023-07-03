@@ -65,9 +65,7 @@ const HeaderCarousel = () => {
           onClick={() => {
             playSlider?.current.next()
           }}
-        >
-          <RightOutlined />
-        </ButtonNext>
+        ></ButtonNext>
       </TabPanel>
       <TabPanel tab="Morder" key="2">
         <ButtonPref
